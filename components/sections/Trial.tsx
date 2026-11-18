@@ -13,7 +13,7 @@ const ENDPOINT = process.env.NEXT_PUBLIC_TRIAL_FORM_ENDPOINT;
 type State = 'idle' | 'sending' | 'success' | 'error';
 
 const field =
-  'h-[58px] w-full border border-line bg-ink px-5 text-lg text-white placeholder:text-mist/70 transition-colors focus:border-green focus:outline-none';
+  'h-[58px] w-full border border-line bg-ink px-5 text-lg text-fg placeholder:text-mist/70 transition-colors focus:border-green focus:outline-none';
 
 export function Trial() {
   const [state, setState] = useState<State>('idle');
@@ -39,10 +39,10 @@ export function Trial() {
   }
 
   return (
-    <section id="trial" data-section="fit-trainer-contact-1" className="bg-navy py-[120px] text-white">
+    <section id="trial" data-section="fit-trainer-contact-1" className="bg-navy py-[120px] text-fg">
       <div className="container-site">
         <div className="grid grid-cols-2 gap-x-16 gap-y-4 max-[991px]:grid-cols-1 max-[991px]:gap-y-14 max-[479px]:gap-y-10">
-          <div data-reveal className="relative min-h-[520px] w-full max-w-[590px] overflow-hidden bg-elev max-[991px]:mx-auto max-[991px]:min-h-0 max-[991px]:max-w-[500px] max-[991px]:aspect-[4/5]">
+          <div data-reveal className="relative min-h-[520px] w-full max-w-[590px] overflow-hidden bg-elev text-on-media max-[991px]:mx-auto max-[991px]:min-h-0 max-[991px]:max-w-[500px] max-[991px]:aspect-[4/5]">
             <img
               data-parallax="8"
               src={images.club}
@@ -71,7 +71,7 @@ export function Trial() {
 
               {state === 'success' ? (
                 <div role="status" className="w-full border border-green bg-green/10 p-8">
-                  <div className="h-card mb-3 text-green">You are in.</div>
+                  <div className="h-card mb-3 text-leaf">You are in.</div>
                   <p className="m-0 text-lg">Thanks. We will be in touch shortly with your pass. Questions before then? Call {site.phone}.</p>
                 </div>
               ) : (
@@ -101,12 +101,12 @@ export function Trial() {
                   <button
                     type="submit"
                     disabled={state === 'sending'}
-                    className="mt-2 inline-flex h-[60px] w-full items-center justify-center border border-green bg-green text-xl font-medium text-ink transition-colors duration-[400ms] hover:bg-green/15 hover:text-white disabled:cursor-wait"
+                    className="mt-2 inline-flex h-[60px] w-full items-center justify-center border border-green bg-green text-xl font-medium text-on-green transition-colors duration-[400ms] hover:bg-green/15 hover:text-fg disabled:cursor-wait"
                   >
                     {state === 'sending' ? 'Sending…' : 'Get my free pass'}
                   </button>
                   {state === 'error' ? (
-                    <p role="alert" className="m-0 text-base text-[#ff8f8f]">
+                    <p role="alert" className="m-0 text-base text-red-500">
                       That did not go through. Try again, or call {site.phone}.
                     </p>
                   ) : null}
@@ -116,11 +116,11 @@ export function Trial() {
               <div className="h-px w-full bg-line" />
 
               <div className="flex flex-col items-start gap-5">
-                <a href={site.phoneHref} className="flex items-center gap-3 text-white no-underline hover:text-green">
+                <a href={site.phoneHref} className="flex items-center gap-3 text-fg no-underline hover:text-leaf">
                   <Phone aria-hidden className="h-7 w-7" strokeWidth={1.5} />
                   {site.phone}
                 </a>
-                <a href={site.mapHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white no-underline hover:text-green">
+                <a href={site.mapHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-fg no-underline hover:text-leaf">
                   <MapPin aria-hidden className="h-7 w-7 shrink-0" strokeWidth={1.5} />
                   <span>
                     {site.address.street}, {site.address.cityLine}

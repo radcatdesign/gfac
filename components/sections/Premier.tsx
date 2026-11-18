@@ -7,7 +7,7 @@ function Perk({ title, body }: { title: string; body: string }) {
   return (
     <div data-reveal className="flex flex-col items-center gap-10 bg-elev px-8 py-[50px] shadow-[0_2px_30px_#1d34330d]">
       <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-blue">
-        <Check aria-hidden className="h-9 w-9 text-white" strokeWidth={3} />
+        <Check aria-hidden className="h-9 w-9 text-on-blue" strokeWidth={3} />
       </div>
       <div className="flex flex-col items-center gap-4 text-center">
         <h3 className="h-card m-0">{title}</h3>
@@ -22,7 +22,7 @@ export function Premier() {
   const right = premierPerks.filter((_, i) => i % 2 === 1);
 
   return (
-    <section id="premier" data-section="fit-trainer-tiles-1" className="bg-ink py-[120px] text-white max-[479px]:py-[100px]">
+    <section id="premier" data-section="fit-trainer-tiles-1" className="bg-ink py-[120px] text-fg max-[479px]:py-[100px]">
       <div className="container-site">
         <div className="grid grid-cols-2 gap-x-16 max-[991px]:grid-cols-1 max-[991px]:gap-y-16">
           <div className="relative">
@@ -30,7 +30,7 @@ export function Premier() {
               <div data-reveal className="flex max-w-[530px] flex-col items-start gap-6 max-[991px]:mx-auto max-[991px]:max-w-[590px] max-[991px]:items-center max-[991px]:text-center">
                 <Tag>premier membership</Tag>
                 <h2 className="h-section m-0">
-                  Everything in the building for <span className="text-green">$34.95</span> a month
+                  Everything in the building for <span className="text-leaf">$34.95</span> a month
                 </h2>
                 <p className="m-0 text-mist">
                   Premier is what most members pick. It opens every door in the club and lets you bring a friend each time you

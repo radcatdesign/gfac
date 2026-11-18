@@ -57,7 +57,7 @@ export function Hero() {
       ref={root}
       id="top"
       data-section="hero"
-      className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink pb-[96px] pt-[160px] text-white max-[991px]:pb-[80px] max-[767px]:pt-[130px]"
+      className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink pb-[96px] pt-[160px] text-on-media max-[991px]:pb-[80px] max-[767px]:pt-[130px]"
     >
       <img
         data-hero="bg"
@@ -90,15 +90,15 @@ export function Hero() {
           </p>
 
           <div data-hero="fade" className="mt-2 flex flex-wrap items-center gap-4">
-            <Button href="#pricing" variant="join" size="lg">
+            <Button href="#pricing" variant="join" size="lg" className="hover:!text-on-media">
               Join for $1
             </Button>
-            <Button href="#trial" variant="outline" size="lg">
+            <Button href="#trial" variant="outline" size="lg" className="!text-on-media">
               Get a free 3-day pass
             </Button>
           </div>
 
-          <ul data-hero="fade" className="m-0 flex list-none flex-wrap gap-x-8 gap-y-2 p-0 text-base text-mist">
+          <ul data-hero="fade" className="m-0 flex list-none flex-wrap gap-x-8 gap-y-2 p-0 text-base text-on-media/70">
             {offer.proof.map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <span className="h-px w-5 bg-green" />

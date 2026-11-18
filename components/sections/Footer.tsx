@@ -23,13 +23,13 @@ function Instagram() {
 
 export function Footer() {
   return (
-    <footer data-section="fit-trainer-footer-1" className="bg-elev pb-16 pt-[120px] text-white max-[991px]:pb-[130px]">
+    <footer data-section="fit-trainer-footer-1" className="bg-elev pb-16 pt-[120px] text-fg max-[991px]:pb-[130px]">
       <div className="container-site">
         <div data-reveal className="mb-20 flex items-end justify-between gap-10 border-b border-line pb-20 max-[767px]:flex-col max-[767px]:items-start">
           <div className="h-display text-[clamp(48px,7.5vw,120px)]">
             Where you
             <br />
-            <span className="text-green">belong.</span>
+            <span className="text-leaf">belong.</span>
           </div>
           <div className="flex flex-wrap gap-4">
             <Button href="#pricing" variant="join" size="lg">
@@ -45,11 +45,11 @@ export function Footer() {
           <div className="flex flex-col items-start gap-10">
             <Logo />
             <div className="flex flex-col items-start gap-5">
-              <a href={site.phoneHref} className="flex items-center gap-2 text-base text-white no-underline hover:text-green">
+              <a href={site.phoneHref} className="flex items-center gap-2 text-base text-fg no-underline hover:text-leaf">
                 <Phone aria-hidden className="h-6 w-6" strokeWidth={1.5} />
                 {site.phone}
               </a>
-              <a href={site.mapHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-base text-white no-underline hover:text-green">
+              <a href={site.mapHref} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-base text-fg no-underline hover:text-leaf">
                 <MapPin aria-hidden className="h-6 w-6 shrink-0" strokeWidth={1.5} />
                 <span>
                   {site.address.street}
@@ -58,12 +58,12 @@ export function Footer() {
                 </span>
               </a>
             </div>
-            <div className="h-px w-full bg-white/30" />
+            <div className="h-px w-full bg-line" />
             <div className="flex items-center gap-4">
-              <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Get Fit on Facebook" className="text-white transition-colors hover:text-green">
+              <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Get Fit on Facebook" className="text-fg transition-colors hover:text-leaf">
                 <Facebook />
               </a>
-              <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Get Fit on Instagram" className="text-white transition-colors hover:text-green">
+              <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Get Fit on Instagram" className="text-fg transition-colors hover:text-leaf">
                 <Instagram />
               </a>
             </div>
@@ -75,7 +75,7 @@ export function Footer() {
                 <div className="text-base text-mist">{group.heading}</div>
                 <div className="flex flex-col items-start gap-6">
                   {group.items.map((item) => (
-                    <a key={item.label} href={item.href} className="text-base leading-[22px] text-white no-underline hover:text-green">
+                    <a key={item.label} href={item.href} className="text-base leading-[22px] text-fg no-underline hover:text-leaf">
                       {item.label}
                     </a>
                   ))}
@@ -85,7 +85,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mb-16 mt-20 h-px w-full bg-white/30" />
+        <div className="mb-16 mt-20 h-px w-full bg-line" />
 
         <div className="flex items-center justify-between text-base text-mist max-[767px]:flex-col max-[767px]:items-start max-[767px]:gap-4">
           <div>© {new Date().getFullYear()} {site.name}. Open every day.</div>

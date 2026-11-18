@@ -12,7 +12,7 @@ export function Pricing() {
   const [term, setTerm] = useState<Term>('monthly');
 
   return (
-    <section id="pricing" data-section="fit-trainer-pricing-1" className="bg-ink py-[120px] text-white">
+    <section id="pricing" data-section="fit-trainer-pricing-1" className="bg-ink py-[120px] text-fg">
       <div className="container-site">
         <div data-reveal className="mb-12 flex flex-col items-center gap-6 text-center">
           <Tag>pricing</Tag>
@@ -35,7 +35,7 @@ export function Pricing() {
                 role="tab"
                 aria-selected={term === value}
                 onClick={() => setTerm(value)}
-                className="relative z-10 h-12 px-7 text-lg font-medium text-white max-[479px]:px-4 max-[479px]:text-base"
+                className={`relative z-10 h-12 px-7 text-lg font-medium transition-colors duration-300 max-[479px]:px-4 max-[479px]:text-base ${term === value ? 'text-on-blue' : 'text-fg'}`}
               >
                 {value === 'monthly' ? 'Monthly' : '18 months, 6 free'}
               </button>
@@ -59,7 +59,7 @@ export function Pricing() {
                     <div className="flex w-full items-center justify-between gap-4">
                       <h3 className="h-card m-0 text-[32px]">{plan.name}</h3>
                       {plan.badge ? (
-                        <span className="bg-green px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] text-ink">{plan.badge}</span>
+                        <span className="bg-green px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] text-on-green">{plan.badge}</span>
                       ) : null}
                     </div>
                     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -68,7 +68,7 @@ export function Pricing() {
                       </span>
                       <span className="text-lg text-mist">{price.per}</span>
                     </div>
-                    <div className={`text-lg ${plan.featured ? 'text-green' : 'text-mist'}`}>{price.note}</div>
+                    <div className={`text-lg ${plan.featured ? 'text-leaf' : 'text-mist'}`}>{price.note}</div>
                   </div>
                   <p className="m-0 text-lg">{plan.blurb}</p>
                 </div>
@@ -78,7 +78,7 @@ export function Pricing() {
                 <ul className="m-0 flex list-none flex-col items-start gap-4 p-0">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3 text-left text-lg leading-[1.4]">
-                      <Check aria-hidden className="mt-[2px] h-6 w-6 shrink-0 text-green" />
+                      <Check aria-hidden className="mt-[2px] h-6 w-6 shrink-0 text-leaf" />
                       {feature}
                     </li>
                   ))}
@@ -96,7 +96,7 @@ export function Pricing() {
           <p className="m-0 text-sm leading-[1.5] text-mist">{pricingFinePrint}</p>
           <p className="m-0 text-base">
             Rather talk it through? Call{' '}
-            <a href={site.phoneHref} className="text-green underline-offset-4 hover:underline">
+            <a href={site.phoneHref} className="text-leaf underline-offset-4 hover:underline">
               {site.phone}
             </a>{' '}
             and ask about in-club promotions.

@@ -5,16 +5,17 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { nav, site } from '@/lib/site';
 import { Button } from '@/components/ui/Button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function Logo({ className = '' }: { className?: string }) {
   return (
-    <a href="#top" aria-label={`${site.name} home`} className={`flex items-center gap-3 no-underline ${className}`}>
-      <span className="font-display text-[28px] font-bold uppercase leading-none tracking-tight text-white">
-        Get<span className="text-green">/</span>Fit
+    <a href="#top" aria-label={`${site.name} home`} className={`flex items-center gap-3 text-inherit no-underline ${className}`}>
+      <span className="font-display text-[28px] font-bold uppercase leading-none tracking-tight">
+        Get<span className="text-leaf">/</span>Fit
       </span>
-      <span className="hidden border-l border-line pl-3 text-[11px] font-medium uppercase leading-tight tracking-[0.18em] text-mist min-[480px]:block">
+      <span className="hidden border-l border-current/30 pl-3 text-[11px] font-medium uppercase leading-tight tracking-[0.18em] opacity-70 min-[480px]:block">
         Athletic
         <br />
         Club
@@ -50,7 +51,7 @@ export function Navbar() {
     <header
       ref={barRef}
       data-scrolled="false"
-      className="group/bar fixed inset-x-0 top-0 z-50 h-[88px] border-b border-transparent transition-[background-color,border-color,height] duration-500 data-[scrolled=true]:h-[72px] data-[scrolled=true]:border-line data-[scrolled=true]:bg-ink/80 data-[scrolled=true]:backdrop-blur-xl max-[767px]:h-[72px]"
+      className="group/bar fixed inset-x-0 top-0 z-50 h-[88px] border-b text-on-media data-[scrolled=true]:text-fg border-transparent transition-[background-color,border-color,height] duration-500 data-[scrolled=true]:h-[72px] data-[scrolled=true]:border-line data-[scrolled=true]:bg-ink/80 data-[scrolled=true]:backdrop-blur-xl max-[767px]:h-[72px]"
     >
       <div className="container-site flex h-full items-center justify-between">
         <Logo />
@@ -60,39 +61,43 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="group/link relative px-4 py-3 text-lg text-[#e7e7e7] no-underline transition-colors hover:text-white"
+              className="group/link relative px-4 py-3 text-lg text-inherit no-underline opacity-90 transition-opacity hover:opacity-100"
             >
               {item.label}
               <span className="absolute inset-x-4 bottom-2 h-px origin-left scale-x-0 bg-green transition-transform duration-300 group-hover/link:scale-x-100" />
             </a>
           ))}
-          <Button href="#trial" variant="outline" className="ml-4">
+          <ThemeToggle className="ml-2" />
+          <Button href="#trial" variant="outline" className="ml-3 !text-inherit">
             Free 3-day pass
           </Button>
-          <Button href="#pricing" variant="join" className="ml-3">
+          <Button href="#pricing" variant="join" className="ml-3 hover:!text-inherit">
             Join for $1
           </Button>
         </nav>
 
+        <div className="hidden items-center gap-2 max-[991px]:flex">
+          <ThemeToggle />
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
-          className={`hidden h-12 w-12 items-center justify-center transition-colors duration-200 max-[991px]:flex ${
-            open ? 'bg-blue' : 'bg-elev'
+          className={`flex h-12 w-12 items-center justify-center transition-colors duration-200 ${
+            open ? 'bg-blue' : 'bg-current/10'
           }`}
         >
           <span className="flex flex-col items-center gap-[7px]">
-            <span className={`h-[2px] w-7 transition-transform duration-300 ${open ? 'translate-y-[4.5px] rotate-45 bg-white' : 'bg-green'}`} />
-            <span className={`h-[2px] transition-all duration-300 ${open ? 'w-7 -translate-y-[4.5px] -rotate-45 bg-white' : 'w-5 bg-green'}`} />
+            <span className={`h-[2px] w-7 transition-transform duration-300 ${open ? 'translate-y-[4.5px] rotate-45 bg-on-blue' : 'bg-green'}`} />
+            <span className={`h-[2px] transition-all duration-300 ${open ? 'w-7 -translate-y-[4.5px] -rotate-45 bg-on-blue' : 'w-5 bg-green'}`} />
           </span>
         </button>
+        </div>
       </div>
 
       <div
         data-menu-open={open ? '' : undefined}
-        className={`absolute inset-x-3 top-[80px] hidden max-h-[calc(100svh-100px)] overflow-y-auto border border-line bg-elev p-8 transition-all duration-300 max-[991px]:block ${
+        className={`absolute inset-x-3 top-[80px] hidden max-h-[calc(100svh-100px)] overflow-y-auto border border-line bg-elev p-8 text-fg transition-all duration-300 max-[991px]:block ${
           open ? 'pointer-events-auto translate-y-0 opacity-100' : 'pointer-events-none -translate-y-3 opacity-0'
         }`}
       >
@@ -101,7 +106,7 @@ export function Navbar() {
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
-            className="block border-b border-line py-5 font-display text-2xl uppercase text-white no-underline"
+            className="block border-b border-line py-5 font-display text-2xl uppercase text-fg no-underline"
           >
             {item.label}
           </a>

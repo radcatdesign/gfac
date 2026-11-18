@@ -5,7 +5,7 @@ import { Tag } from '@/components/ui/Tag';
 
 export function Training() {
   return (
-    <section id="training" data-section="fit-trainer-pricing-1" className="relative overflow-hidden bg-navy py-[120px] text-white max-[479px]:py-[100px]">
+    <section id="training" data-section="fit-trainer-pricing-1" className="relative overflow-hidden bg-navy py-[120px] text-fg max-[479px]:py-[100px]">
       <div aria-hidden className="pointer-events-none absolute -right-[10%] top-[-20%] h-[70%] w-[55%] rounded-full bg-blue/20 blur-[140px]" />
       <div className="container-site relative">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
@@ -29,7 +29,7 @@ export function Training() {
                   <div className="flex items-center gap-3">
                     <Tag solid>{program.tag}</Tag>
                     {program.strike ? <span className="text-base text-mist line-through">{program.strike}</span> : null}
-                    {program.featured ? <span className="text-sm uppercase tracking-[0.16em] text-green">Most popular</span> : null}
+                    {program.featured ? <span className="text-sm uppercase tracking-[0.16em] text-leaf">Most popular</span> : null}
                   </div>
                   <h3 className="h-card m-0 text-[32px]">{program.title}</h3>
                 </div>
@@ -39,7 +39,7 @@ export function Training() {
               <ul className="m-0 flex list-none flex-col items-start gap-4 p-0">
                 {program.points.map((point) => (
                   <li key={point} className="flex items-center gap-3 text-left text-lg leading-[1.4]">
-                    <Check aria-hidden className="h-6 w-6 shrink-0 text-green" />
+                    <Check aria-hidden className="h-6 w-6 shrink-0 text-leaf" />
                     {point}
                   </li>
                 ))}

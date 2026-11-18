@@ -5,9 +5,9 @@ type Size = 'lg' | 'md';
 
 const variants: Record<Variant, string> = {
   // Green is the club's "Join" colour, blue is its "Free trial" colour.
-  join: 'border-green bg-green text-ink hover:bg-green/15 hover:text-white',
-  trial: 'border-blue bg-blue text-white hover:bg-blue/15',
-  outline: 'border-blue bg-transparent text-white hover:bg-blue/20',
+  join: 'border-green bg-green text-on-green hover:bg-green/15 hover:text-fg',
+  trial: 'border-blue bg-blue text-on-blue hover:bg-blue/15 hover:text-fg',
+  outline: 'border-blue bg-transparent text-fg hover:bg-blue/20',
 };
 
 const sizes: Record<Size, string> = {

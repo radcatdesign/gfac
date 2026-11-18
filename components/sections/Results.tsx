@@ -34,7 +34,7 @@ export function Results() {
   }, []);
 
   return (
-    <section ref={root} id="results" data-section="fit-trainer-testimonials-1" className="bg-ink py-[120px] text-white max-[767px]:pb-[140px]">
+    <section ref={root} id="results" data-section="fit-trainer-testimonials-1" className="bg-ink py-[120px] text-fg max-[767px]:pb-[140px]">
       <div className="container-site">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
           <Tag>results</Tag>
@@ -46,7 +46,7 @@ export function Results() {
             <li key={stat.label} data-reveal className="flex flex-col gap-4 border-t-2 border-blue bg-elev p-8">
               <div className="h-display flex items-baseline gap-2 text-[clamp(56px,6vw,92px)]">
                 <span data-count={stat.value}>{stat.value}</span>
-                <span className="text-[0.36em] text-green">{stat.unit}</span>
+                <span className="text-[0.36em] text-leaf">{stat.unit}</span>
               </div>
               <p className="m-0 text-lg text-mist">{stat.label}</p>
             </li>
@@ -58,7 +58,7 @@ export function Results() {
             type="button"
             onClick={() => setCurrent((v) => (v === 0 ? count - 1 : v - 1))}
             aria-label="Previous story"
-            className="absolute left-0 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-blue transition-transform duration-200 hover:scale-110 max-[767px]:bottom-[-80px] max-[767px]:left-[calc(50%-68px)] max-[767px]:top-auto max-[767px]:translate-y-0"
+            className="absolute left-0 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-blue text-on-blue transition-transform duration-200 hover:scale-110 max-[767px]:bottom-[-80px] max-[767px]:left-[calc(50%-68px)] max-[767px]:top-auto max-[767px]:translate-y-0"
           >
             <ArrowLeft aria-hidden className="h-6 w-6" />
           </button>
@@ -71,7 +71,7 @@ export function Results() {
               {results.stories.map((story, i) => (
                 <div key={story.name} className="w-full shrink-0" aria-hidden={i !== current}>
                   <div className="flex h-full flex-col items-center justify-center gap-6 bg-elev p-16 text-center max-[479px]:p-10">
-                    <div className="h-display text-[clamp(40px,5vw,72px)] text-green">{story.headline}</div>
+                    <div className="h-display text-[clamp(40px,5vw,72px)] text-leaf">{story.headline}</div>
                     <p className="m-0 max-w-[620px] text-[28px] font-normal leading-[1.5] max-[479px]:text-xl">{story.body}</p>
                     <div className="mt-2 text-xl font-medium">{story.name}</div>
                   </div>
@@ -84,7 +84,7 @@ export function Results() {
             type="button"
             onClick={() => setCurrent((v) => (v === count - 1 ? 0 : v + 1))}
             aria-label="Next story"
-            className="absolute right-0 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-blue transition-transform duration-200 hover:scale-110 max-[767px]:bottom-[-80px] max-[767px]:right-[calc(50%-68px)] max-[767px]:top-auto max-[767px]:translate-y-0"
+            className="absolute right-0 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-blue text-on-blue transition-transform duration-200 hover:scale-110 max-[767px]:bottom-[-80px] max-[767px]:right-[calc(50%-68px)] max-[767px]:top-auto max-[767px]:translate-y-0"
           >
             <ArrowRight aria-hidden className="h-6 w-6" />
           </button>

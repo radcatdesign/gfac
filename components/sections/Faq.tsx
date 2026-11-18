@@ -8,7 +8,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" data-section="fit-trainer-faq-1" className="bg-ink py-[120px] text-white">
+    <section id="faq" data-section="fit-trainer-faq-1" className="bg-ink py-[120px] text-fg">
       <div className="container-site">
         <div className="grid grid-cols-2 gap-x-20 gap-y-20 max-[767px]:grid-cols-1">
           <div data-reveal className="flex max-w-[420px] flex-col items-start gap-6 max-[767px]:max-w-none max-[767px]:items-center max-[767px]:text-center">
@@ -37,9 +37,9 @@ export function Faq() {
                         {faq.q}
                       </span>
                       <span className="relative flex h-10 w-10 flex-none items-center justify-center">
-                        <span className={`h-0.5 w-[18px] rounded-sm transition-colors duration-300 ${isOpen ? 'bg-green' : 'bg-white'}`} />
+                        <span className={`h-0.5 w-[18px] rounded-sm transition-colors duration-300 ${isOpen ? 'bg-green' : 'bg-fg'}`} />
                         <span
-                          className={`absolute h-0.5 w-[18px] rounded-sm transition-all duration-300 ${isOpen ? 'rotate-0 bg-green' : '-rotate-90 bg-white'}`}
+                          className={`absolute h-0.5 w-[18px] rounded-sm transition-all duration-300 ${isOpen ? 'rotate-0 bg-green' : '-rotate-90 bg-fg'}`}
                         />
                       </span>
                     </button>

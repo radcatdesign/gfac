@@ -63,7 +63,7 @@ export function Classes() {
   }, []);
 
   return (
-    <section id="classes" data-section="classes-scroll" className="bg-ink text-white">
+    <section id="classes" data-section="classes-scroll" className="bg-ink text-fg">
       <div ref={pin} className="flex flex-col justify-center gap-12 overflow-hidden py-[100px] min-[992px]:h-screen min-[992px]:py-0">
         <div className="container-site">
           <div data-reveal className="flex items-end justify-between gap-10 max-[767px]:flex-col max-[767px]:items-start">
@@ -88,7 +88,7 @@ export function Classes() {
             {classes.map((item, i) => (
               <article
                 key={item.name}
-                className="group relative h-[min(54vh,540px)] min-h-[380px] w-[min(78vw,420px)] shrink-0 snap-start overflow-hidden bg-elev"
+                className="group relative h-[min(54vh,540px)] min-h-[380px] w-[min(78vw,420px)] shrink-0 snap-start overflow-hidden bg-elev text-on-media"
               >
                 <img
                   data-class-img
@@ -98,12 +98,12 @@ export function Classes() {
                   className="absolute inset-y-0 -left-[12%] h-full w-[124%] max-w-none object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(#050b1200_30%,#050b12e6_86%)]" />
-                <div className="absolute left-6 top-6 font-display text-sm tracking-[0.2em] text-white/80">
+                <div className="absolute left-6 top-6 font-display text-sm tracking-[0.2em] text-on-media/80">
                   {String(i + 1).padStart(2, '0')} / {String(classes.length).padStart(2, '0')}
                 </div>
                 <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-8">
                   <h3 className="h-card m-0 text-[30px]">{item.name}</h3>
-                  <p className="m-0 text-lg text-white/85">{item.body}</p>
+                  <p className="m-0 text-lg text-on-media/85">{item.body}</p>
                 </div>
               </article>
             ))}

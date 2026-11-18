@@ -31,10 +31,10 @@ export function StickyCta() {
       style={{ transform: 'translateY(110%)' }}
       className="fixed inset-x-0 bottom-0 z-40 hidden grid-cols-2 gap-2 border-t border-line bg-ink/90 p-3 pb-[max(12px,env(safe-area-inset-bottom))] backdrop-blur-xl max-[991px]:grid"
     >
-      <a href="#trial" className="flex h-[52px] items-center justify-center border border-blue text-lg font-medium text-white no-underline">
+      <a href="#trial" className="flex h-[52px] items-center justify-center border border-blue text-lg font-medium text-fg no-underline">
         Free 3-day pass
       </a>
-      <a href="#pricing" className="flex h-[52px] items-center justify-center border border-green bg-green text-lg font-medium text-ink no-underline">
+      <a href="#pricing" className="flex h-[52px] items-center justify-center border border-green bg-green text-lg font-medium text-on-green no-underline">
         Join for $1
       </a>
     </div>
