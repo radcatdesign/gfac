@@ -70,7 +70,7 @@ export function Hero() {
       <div className="absolute inset-x-0 -top-px bottom-0 bg-[linear-gradient(#050b12_0%,#050b1200_22%,#050b1200_62%,#050b12_100%)]" />
 
       <div data-hero-copy className="container-site relative z-10">
-        <div className="flex max-w-[860px] flex-col items-start gap-8">
+        <div className="flex max-w-[1100px] flex-col items-start gap-8">
           <div data-hero="label" className="flex items-center gap-[10px] font-display text-[22px] font-normal leading-[1.2] max-[479px]:text-lg">
             <span className="relative flex h-[10px] w-[10px]">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green opacity-70" />
