@@ -11,9 +11,9 @@ export function Amenities() {
       <div className="container-site">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
           <Tag>the club</Tag>
-          <h2 className="h-section m-0 max-w-[900px]">However you like to move, there is room for you</h2>
+          <h2 className="h-section m-0 max-w-[900px]">Every goal needs a place to happen</h2>
           <p className="m-0 max-w-[620px] text-mist">
-            Play a match, catch a movie from the treadmill, take a class with friends. You decide what today looks like.
+            Lose the weight, build the strength, get your energy back. Whatever you wrote down for the new year, you can chase it here.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export function Amenities() {
 
         <div data-reveal className="mt-16 flex flex-col items-center">
           <Button href="#trial" variant="trial">
-            See it for yourself, free
+            Start with 3 free days
           </Button>
         </div>
       </div>

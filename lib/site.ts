@@ -13,7 +13,7 @@ export const site = {
   city: 'Indianapolis',
   tagline: 'Where you belong',
   description:
-    'Your gym in Indianapolis. Start Premier for $1 enrollment and pay no dues for 30 days. Pickleball, racquetball, cardio theatre, classes and personal training.',
+    'Make this the year you hit your goal. Join Get Fit Athletic Club in Indianapolis for $1 enrollment and no dues for 30 days. Pickleball, racquetball, cardio theatre, classes and personal training.',
   phone: '(317) 357-4653',
   phoneHref: 'tel:+13173574653',
   address: { street: '7140 E Washington St.', cityLine: 'Indianapolis, IN 46219' },
@@ -64,32 +64,32 @@ export const amenities = [
   {
     icon: 'film',
     title: 'Cardio theatre',
-    body: 'Watch a full movie on the big screen while you put in your miles. You will forget you are on a treadmill.',
+    body: 'Put in your miles with a movie on the big screen. The minutes go faster when you are not watching the clock.',
   },
   {
     icon: 'trophy',
     title: 'Pickleball',
-    body: 'Grab a paddle and a partner and play indoors all year. New to it? You will pick it up in one game.',
+    body: 'Cardio that feels like play. Grab a paddle, bring a partner and stay on your goal without counting minutes.',
   },
   {
     icon: 'target',
     title: 'Racquetball',
-    body: 'Take a court whenever you want one. Play singles, doubles, or just you against the wall.',
+    body: 'Burn through a match on a court of your own. You will sweat more than you planned to.',
   },
   {
     icon: 'users',
     title: 'Group fitness',
-    body: 'Find your class and your people. Zumba, yoga, Full Body Blast and more, with instructors who learn your name.',
+    body: 'Show up for the class and let the room carry you through it. Zumba, yoga, Full Body Blast and more.',
   },
   {
     icon: 'sun',
     title: 'Tanning',
-    body: 'Finish your workout with a tan. Premium beds are unlimited with your Premier membership.',
+    body: 'Reward the work. Premium beds are unlimited with your Premier membership.',
   },
   {
     icon: 'clock',
     title: '24-hour access',
-    body: 'Train on your schedule, not ours. Premier gets you in around the clock, Monday through Thursday.',
+    body: 'No excuse left. Premier gets you in around the clock, Monday through Thursday.',
   },
 ] as const;
 
@@ -137,13 +137,13 @@ export const classes = [
 ];
 
 export const premierPerks = [
-  { title: 'Bring a friend', body: 'Your guest trains free, every workout.' },
-  { title: 'Unlimited tanning', body: 'Use the premium beds whenever you want.' },
-  { title: 'Every class', body: 'Take as many classes as you like.' },
-  { title: '24-hour access', body: 'Get in around the clock, Monday to Thursday.' },
-  { title: 'Cardio theatre', body: 'Watch a movie while you train.' },
-  { title: 'Racquetball', body: 'Your court time is included.' },
-  { title: 'Training studio', body: 'Use the functional training studio any time.' },
+  { title: 'Bring a friend', body: 'Built-in accountability, free, every workout.' },
+  { title: 'Unlimited tanning', body: 'Premium beds whenever you want.' },
+  { title: 'Every class', body: 'Unlimited classes, all week.' },
+  { title: '24-hour access', body: 'Train at any hour, Monday to Thursday.' },
+  { title: 'Cardio theatre', body: 'Miles go faster with a movie.' },
+  { title: 'Racquetball', body: 'Court time included.' },
+  { title: 'Training studio', body: 'Unlimited functional training.' },
   { title: "Women's area", body: 'A workout space just for women.' },
 ];
 
@@ -153,8 +153,8 @@ export const training = {
       tag: 'Complimentary',
       strike: '$50',
       title: 'Smart Start',
-      body: 'Sit down with a fitness coach for an hour, set your goals and leave with your game plan. It is free when you join.',
-      points: ['One hour on your goals', 'Your personal road map', 'Free with your membership'],
+      body: 'One hour with a coach. You say where you want to be this year, and you leave with the plan to get there. Free when you join.',
+      points: ['Your goal, on paper', 'A plan built for you', 'Free with your membership'],
       cta: 'Claim my free session',
       featured: false,
     },
@@ -162,9 +162,9 @@ export const training = {
       tag: '$199',
       strike: '',
       title: 'Kickstarter',
-      body: 'Our most popular program. You get four coaching sessions, plus two more on us.',
-      points: ['Six sessions, all yours', 'Your goals and game plan in session one', 'Your Smart Start included'],
-      cta: 'Start my Kickstarter',
+      body: 'Our most popular program. Four coaching sessions to build momentum, plus two more on us.',
+      points: ['Six sessions total', 'Game plan set in session one', 'Smart Start included'],
+      cta: 'Start the Kickstarter',
       featured: true,
     },
   ],
@@ -213,9 +213,9 @@ export const plans = [
     featured: true,
     monthly: { price: '$34.95', per: '/month', note: '$1 enrollment. No dues for 30 days.', href: links.joinPremier },
     prepaid: { price: '$349', per: 'for 18 months', note: 'Pay for 12 months, get 6 free.', href: links.joinPremierYearly },
-    blurb: 'You get the whole club, and your friend trains free.',
+    blurb: 'Every tool in the club, and a friend to train with.',
     features: [
-      'Bring your friend free, every workout',
+      'Bring a friend free, every workout',
       '24-hour access Monday to Thursday',
       'Unlimited group fitness classes',
       'Unlimited tanning',
@@ -223,9 +223,9 @@ export const plans = [
       'Functional training studio',
       "Women's-only workout area",
       'All Get Fit locations',
-      'Your Smart Start session with a coach',
+      'Smart Start session with a coach',
     ],
-    cta: 'Start my Premier for $1',
+    cta: 'Start Premier for $1',
   },
   {
     id: 'basic',
@@ -234,9 +234,9 @@ export const plans = [
     featured: false,
     monthly: { price: '$19.95', per: '/month', note: '$89 enrollment.', href: links.joinBasic },
     prepaid: { price: '$249', per: 'for 18 months', note: 'Pay for 12 months, get 6 free.', href: links.joinBasicYearly },
-    blurb: 'Everything you need to train, nothing you do not.',
+    blurb: 'Everything you need to get to work.',
     features: ['All cardio and weight equipment', 'Your Smart Start session with a coach'],
-    cta: 'Start my Basic',
+    cta: 'Start Basic',
   },
 ];
 

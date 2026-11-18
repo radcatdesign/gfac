@@ -69,12 +69,12 @@ export function Classes() {
           <div data-reveal className="flex items-end justify-between gap-10 max-[767px]:flex-col max-[767px]:items-start">
             <div className="flex flex-col items-start gap-6">
               <Tag>group fitness</Tag>
-              <h2 className="h-section m-0">Find your class. Find your people.</h2>
+              <h2 className="h-section m-0">Resolutions stick better in a full room</h2>
             </div>
             <div className="flex max-w-[440px] flex-col items-start gap-5">
-              <p className="m-0 text-mist">Take as many classes as you want with Premier. Show up once and you will know half the room by Friday.</p>
+              <p className="m-0 text-mist">It is easier to show up when someone will notice you are missing. Every class is unlimited with Premier.</p>
               <Button href={links.schedule} variant="outline">
-                See your class schedule
+                See the class schedule
               </Button>
             </div>
           </div>

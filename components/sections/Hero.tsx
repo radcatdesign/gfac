@@ -80,13 +80,13 @@ export function Hero() {
           </div>
 
           <h1 data-hero="title" className="h-display m-0 text-[clamp(54px,8.4vw,132px)]">
-            You belong here.
+            This is your year.
             <br />
-            Start for <span className="text-green">$1.</span>
+            Start it for <span className="text-green">$1.</span>
           </h1>
 
           <p data-hero="fade" className="m-0 max-w-[600px] text-[28px] leading-[1.27] max-[991px]:text-[26px] max-[767px]:text-2xl max-[479px]:text-[22px]">
-            You pay $1 to enroll and nothing in dues for your first 30 days. Stay because you love it, not because a contract says you have to.
+            You set the goal. We give you the place, the plan and the people to hit it. $1 to enroll, no dues for your first 30 days.
           </p>
 
           <div data-hero="fade" className="mt-2 flex flex-wrap items-center gap-4">

@@ -16,8 +16,8 @@ export function Pricing() {
       <div className="container-site">
         <div data-reveal className="mb-12 flex flex-col items-center gap-6 text-center">
           <Tag>pricing</Tag>
-          <h2 className="h-section m-0">Pick your plan. Start today.</h2>
-          <p className="m-0 max-w-[560px] text-mist">You stay month to month, with no contract. Or prepay a year and get six months free.</p>
+          <h2 className="h-section m-0">Make this the year. Pick your plan.</h2>
+          <p className="m-0 max-w-[560px] text-mist">Month to month, no contract. Or prepay a year and get six months free.</p>
         </div>
 
         <div data-reveal className="mb-12 flex justify-center">
@@ -85,7 +85,7 @@ export function Pricing() {
                 </ul>
 
                 <Button href={price.href} variant={plan.featured ? 'join' : 'outline'} className="w-full">
-                  {term === 'monthly' ? plan.cta : `Start my ${plan.name} for ${price.price}`}
+                  {term === 'monthly' ? plan.cta : `Start ${plan.name} for ${price.price}`}
                 </Button>
               </div>
             );

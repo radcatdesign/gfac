@@ -27,9 +27,9 @@ export function Footer() {
       <div className="container-site">
         <div data-reveal className="mb-20 flex items-end justify-between gap-10 border-b border-line pb-20 max-[767px]:flex-col max-[767px]:items-start">
           <div className="h-display text-[clamp(48px,7.5vw,120px)]">
-            Where you
+            Your goal
             <br />
-            <span className="text-leaf">belong.</span>
+            <span className="text-leaf">starts today.</span>
           </div>
           <div className="flex flex-wrap gap-4">
             <Button href="#pricing" variant="join" size="lg">

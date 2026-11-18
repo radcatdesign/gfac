@@ -10,10 +10,10 @@ export function Training() {
       <div className="container-site relative">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
           <Tag>personal training</Tag>
-          <h2 className="h-section m-0 max-w-[900px]">You do the work. Your coach makes it count.</h2>
+          <h2 className="h-section m-0 max-w-[900px]">A goal without a plan is a wish. Get the plan.</h2>
           <p className="m-0 max-w-[640px] text-mist">
-            You get a coach who builds the plan around your goals. Start with your free session, or go straight to the six-session
-            Kickstarter.
+            Your coach turns the resolution into a schedule, then holds you to it. Start with a free session, or commit to the
+            six-session Kickstarter.
           </p>
         </div>
 

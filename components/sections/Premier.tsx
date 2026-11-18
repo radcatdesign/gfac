@@ -30,18 +30,18 @@ export function Premier() {
               <div data-reveal className="flex max-w-[530px] flex-col items-start gap-6 max-[991px]:mx-auto max-[991px]:max-w-[590px] max-[991px]:items-center max-[991px]:text-center">
                 <Tag>premier membership</Tag>
                 <h2 className="h-section m-0">
-                  Your whole club for <span className="text-leaf">$34.95</span> a month
+                  Give your goal every advantage for <span className="text-leaf">$34.95</span> a month
                 </h2>
                 <p className="m-0 text-mist">
-                  Most members pick Premier, and you will see why. You get every door in the club, and you can bring a friend each time
-                  you train. Right now you pay $1 to enroll and no dues for your first 30 days.
+                  Premier takes away the reasons to skip. Train at any hour Monday to Thursday, take every class, and bring a friend to keep
+                  you honest. Right now it is $1 to enroll, with no dues for your first 30 days.
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-4 max-[991px]:justify-center">
                   <Button href="#pricing" variant="join">
-                    Start my Premier for $1
+                    Start Premier for $1
                   </Button>
                   <Button href="#pricing" variant="outline">
-                    Compare my options
+                    Compare plans
                   </Button>
                 </div>
               </div>
