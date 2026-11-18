@@ -13,7 +13,7 @@ export const site = {
   city: 'Indianapolis',
   tagline: 'Where you belong',
   description:
-    'Get Fit Athletic Club in Indianapolis. Premier membership for $1 enrollment and no dues for 30 days. Pickleball, racquetball, cardio theatre, group fitness and personal training.',
+    'Your gym in Indianapolis. Start Premier for $1 enrollment and pay no dues for 30 days. Pickleball, racquetball, cardio theatre, classes and personal training.',
   phone: '(317) 357-4653',
   phoneHref: 'tel:+13173574653',
   address: { street: '7140 E Washington St.', cityLine: 'Indianapolis, IN 46219' },
@@ -64,87 +64,87 @@ export const amenities = [
   {
     icon: 'film',
     title: 'Cardio theatre',
-    body: 'A full movie on the big screen while you put in the miles. The treadmill has never gone faster.',
+    body: 'Watch a full movie on the big screen while you put in your miles. You will forget you are on a treadmill.',
   },
   {
     icon: 'trophy',
     title: 'Pickleball',
-    body: 'The newest addition to the club. Grab a paddle, bring a partner, play indoors all year.',
+    body: 'Grab a paddle and a partner and play indoors all year. New to it? You will pick it up in one game.',
   },
   {
     icon: 'target',
     title: 'Racquetball',
-    body: 'Multiple courts, ready when you are. Singles, doubles, or just you against the wall.',
+    body: 'Take a court whenever you want one. Play singles, doubles, or just you against the wall.',
   },
   {
     icon: 'users',
     title: 'Group fitness',
-    body: 'Zumba, yoga, Full Body Blast and more, led by instructors who know your name.',
+    body: 'Find your class and your people. Zumba, yoga, Full Body Blast and more, with instructors who learn your name.',
   },
   {
     icon: 'sun',
     title: 'Tanning',
-    body: 'Premium tanning beds, unlimited with a Premier membership.',
+    body: 'Finish your workout with a tan. Premium beds are unlimited with your Premier membership.',
   },
   {
     icon: 'clock',
     title: '24-hour access',
-    body: 'Open every day, with round-the-clock access Monday through Thursday for Premier members.',
+    body: 'Train on your schedule, not ours. Premier gets you in around the clock, Monday through Thursday.',
   },
 ] as const;
 
 export const classes = [
   {
     name: 'Zumba®',
-    body: 'Latin-inspired dance cardio. Loud music, big energy, zero pressure to get the steps right.',
+    body: 'Dance your cardio. Loud music, big energy, and nobody cares if you miss a step.',
     img: photo('2017/09/GetFit_Zumba_GroupFitness_1.jpg'),
   },
   {
     name: 'Full Body Blast',
-    body: 'Strength, cardio and core in one session. Every major muscle group, no wasted minutes.',
+    body: 'Hit every major muscle group in one session. You walk out knowing you did the work.',
     img: photo('2017/09/GETFIT_Group-Classes_1.jpg'),
   },
   {
     name: 'Yoga',
-    body: 'Breath, posture and a little quiet. Good for flexibility, better for your head.',
+    body: 'Slow down, breathe, stretch out. Your body loosens up and your head gets quieter.',
     img: photo('2017/09/GETFIT_Group-Classes_5.jpg'),
   },
   {
     name: 'Zumba® Strong',
-    body: 'Bodyweight moves and plyometrics synced to the beat. High intensity, full body.',
+    body: 'Push yourself to the beat. Bodyweight moves and plyometrics that leave you spent in the best way.',
     img: photo('2017/09/GetFit_Krav_Group-Fitness_1.jpg'),
   },
   {
     name: 'Hula Honey',
-    body: 'A hula-inspired dance workout that works your core, hips and legs.',
+    body: 'Work your core, hips and legs in a hula-inspired dance workout you will smile through.',
     img: photo('2017/09/GETFIT_Group-Classes_6.jpg'),
   },
   {
     name: 'Zumba® Toning',
-    body: 'The Zumba you know, with light weights added for muscle definition.',
+    body: 'The Zumba you love, with light weights in your hands for definition.',
     img: photo('2017/09/GETFIT_Group-Classes_8.jpg'),
   },
   {
     name: 'Aerobic Dance',
-    body: 'Rhythmic cardio set to upbeat music. Builds stamina and coordination.',
+    body: 'Build your stamina and coordination with rhythmic cardio set to upbeat music.',
     img: photo('2017/09/GetFit_Pilates_Group-Fitness_2.jpg'),
   },
   {
     name: 'SilverSneakers®',
-    body: 'Music-driven movement that builds strength and range of motion for everyday life.',
+    body: 'Keep your strength and range of motion for everyday life, with music that keeps you moving.',
     img: photo('2017/09/GETFIT_Group-Classes_7.jpg'),
   },
 ];
 
 export const premierPerks = [
-  { title: 'Bring a friend', body: 'A guest, free, every single workout.' },
-  { title: 'Unlimited tanning', body: 'Premium beds whenever you want them.' },
-  { title: 'Every class', body: 'Unlimited group fitness, all week.' },
-  { title: '24-hour access', body: 'Around the clock, Monday to Thursday.' },
-  { title: 'Cardio theatre', body: 'Movies on the big screen while you train.' },
-  { title: 'Racquetball', body: 'Court access is part of the plan.' },
-  { title: 'Training studio', body: 'Unlimited use of the functional training studio.' },
-  { title: "Women's area", body: 'A women-only workout space.' },
+  { title: 'Bring a friend', body: 'Your guest trains free, every workout.' },
+  { title: 'Unlimited tanning', body: 'Use the premium beds whenever you want.' },
+  { title: 'Every class', body: 'Take as many classes as you like.' },
+  { title: '24-hour access', body: 'Get in around the clock, Monday to Thursday.' },
+  { title: 'Cardio theatre', body: 'Watch a movie while you train.' },
+  { title: 'Racquetball', body: 'Your court time is included.' },
+  { title: 'Training studio', body: 'Use the functional training studio any time.' },
+  { title: "Women's area", body: 'A workout space just for women.' },
 ];
 
 export const training = {
@@ -153,18 +153,18 @@ export const training = {
       tag: 'Complimentary',
       strike: '$50',
       title: 'Smart Start',
-      body: 'One hour with a fitness coach to set goals and build your game plan. Free for every new member.',
-      points: ['One-hour goal-setting session', 'A personal road map', 'Included when you join'],
-      cta: 'Claim your session',
+      body: 'Sit down with a fitness coach for an hour, set your goals and leave with your game plan. It is free when you join.',
+      points: ['One hour on your goals', 'Your personal road map', 'Free with your membership'],
+      cta: 'Claim my free session',
       featured: false,
     },
     {
       tag: '$199',
       strike: '',
       title: 'Kickstarter',
-      body: 'Our most popular program. Four coaching sessions, plus two more on us.',
-      points: ['Six sessions total', 'Goals and game plan in session one', 'Smart Start included'],
-      cta: 'Start the Kickstarter',
+      body: 'Our most popular program. You get four coaching sessions, plus two more on us.',
+      points: ['Six sessions, all yours', 'Your goals and game plan in session one', 'Your Smart Start included'],
+      cta: 'Start my Kickstarter',
       featured: true,
     },
   ],
@@ -213,9 +213,9 @@ export const plans = [
     featured: true,
     monthly: { price: '$34.95', per: '/month', note: '$1 enrollment. No dues for 30 days.', href: links.joinPremier },
     prepaid: { price: '$349', per: 'for 18 months', note: 'Pay for 12 months, get 6 free.', href: links.joinPremierYearly },
-    blurb: 'The whole club, plus a guest every time you train.',
+    blurb: 'You get the whole club, and your friend trains free.',
     features: [
-      'Bring a friend free, every workout',
+      'Bring your friend free, every workout',
       '24-hour access Monday to Thursday',
       'Unlimited group fitness classes',
       'Unlimited tanning',
@@ -223,9 +223,9 @@ export const plans = [
       'Functional training studio',
       "Women's-only workout area",
       'All Get Fit locations',
-      'Smart Start session with a coach',
+      'Your Smart Start session with a coach',
     ],
-    cta: 'Join Premier for $1',
+    cta: 'Start my Premier for $1',
   },
   {
     id: 'basic',
@@ -235,8 +235,8 @@ export const plans = [
     monthly: { price: '$19.95', per: '/month', note: '$89 enrollment.', href: links.joinBasic },
     prepaid: { price: '$249', per: 'for 18 months', note: 'Pay for 12 months, get 6 free.', href: links.joinBasicYearly },
     blurb: 'Everything you need to train, nothing you do not.',
-    features: ['All cardio and weight equipment', 'Smart Start session with a coach'],
-    cta: 'Join Basic',
+    features: ['All cardio and weight equipment', 'Your Smart Start session with a coach'],
+    cta: 'Start my Basic',
   },
 ];
 
@@ -245,32 +245,32 @@ export const pricingFinePrint =
 
 export const faqs = [
   {
-    q: 'Is there a contract?',
-    a: 'No. Monthly memberships are month to month. To cancel, give 30 days notice. There is a $10 processing fee.',
+    q: 'Am I signing a contract?',
+    a: 'No. You stay month to month. If you ever want to cancel, give 30 days notice. There is a $10 processing fee.',
   },
   {
     q: 'What do I get with the $1 offer?',
-    a: 'Premier membership with a $1 enrollment fee and no dues for your first 30 days. After that it is $34.95 a month. The offer is for a limited time.',
+    a: 'You get Premier membership, you pay $1 to enroll, and you pay no dues for your first 30 days. After that it is $34.95 a month. The offer is for a limited time.',
   },
   {
-    q: 'What is the difference between Basic and Premier?',
-    a: 'Basic covers all cardio and weight equipment. Premier adds unlimited classes, tanning, racquetball, the cardio theatre, the functional training studio, 24-hour access Monday to Thursday, every Get Fit location, and a free guest every workout.',
+    q: 'Should I pick Basic or Premier?',
+    a: 'If you only want the cardio and weight equipment, Basic covers you. Premier adds unlimited classes, tanning, racquetball, the cardio theatre, the functional training studio, 24-hour access Monday to Thursday, every Get Fit location, and a free guest every workout.',
   },
   {
-    q: 'Are there any other fees?',
-    a: 'A $49 annual rate guarantee fee is charged 60 days after you join. EFT on file is required for all memberships.',
+    q: 'Will I pay any other fees?',
+    a: 'One. You pay a $49 annual rate guarantee fee 60 days after you join. Every membership also needs EFT on file.',
   },
   {
     q: 'Can I try the club before I join?',
-    a: 'Yes. The free 3-day pass gives you the full Get Fit experience. Fill out the form on this page and we will get your pass to you.',
+    a: 'Yes. Your free 3-day pass gives you the full Get Fit experience. Fill out the form on this page and we will get your pass to you.',
   },
   {
     q: 'What is Smart Start?',
-    a: 'A free one-hour session with a fitness coach for every new member. You set goals, build a plan, and leave knowing exactly what to do next.',
+    a: 'Your free one-hour session with a fitness coach. You set your goals, build your plan, and leave knowing exactly what to do next.',
   },
   {
-    q: 'When is the club open 24 hours?',
-    a: 'Premier members have 24-hour access Monday through Thursday. The club is open every day. Call (317) 357-4653 for current staffed hours.',
+    q: 'When can I get in 24 hours a day?',
+    a: 'With Premier you can get in around the clock, Monday through Thursday. The club is open every day. Call (317) 357-4653 for current staffed hours.',
   },
 ];
 

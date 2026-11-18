@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   robots: process.env.NEXT_PUBLIC_BASE_PATH ? { index: false, follow: false } : undefined,
 };
 
-export const viewport: Viewport = { themeColor: '#050b12', colorScheme: 'dark' };
+export const viewport: Viewport = { themeColor: '#f3f6fa', colorScheme: 'light dark' };
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -34,7 +34,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
       <head>
         {/* Marks JS as running before first paint so scroll reveals never flash. */}
         <script

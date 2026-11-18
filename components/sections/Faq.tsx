@@ -12,8 +12,8 @@ export function Faq() {
       <div className="container-site">
         <div className="grid grid-cols-2 gap-x-20 gap-y-20 max-[767px]:grid-cols-1">
           <div data-reveal className="flex max-w-[420px] flex-col items-start gap-6 max-[767px]:max-w-none max-[767px]:items-center max-[767px]:text-center">
-            <h2 className="h-section m-0">Straight answers</h2>
-            <p className="m-0 text-mist">The fees, the fine print and how the trial works. No surprises at the front desk.</p>
+            <h2 className="h-section m-0">Your questions, answered straight</h2>
+            <p className="m-0 text-mist">The fees, the fine print and how your trial works. No surprises when you walk in.</p>
             <div className="mt-4 flex items-center">
               <Button href={site.phoneHref} variant="outline">
                 Call {site.phone}

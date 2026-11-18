@@ -10,9 +10,9 @@ export function Training() {
       <div className="container-site relative">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
           <Tag>personal training</Tag>
-          <h2 className="h-section m-0 max-w-[900px]">Real people getting real results</h2>
+          <h2 className="h-section m-0 max-w-[900px]">You do the work. Your coach makes it count.</h2>
           <p className="m-0 max-w-[640px] text-mist">
-            Our training program is what Get Fit is known for. Start with a free session, or go straight to the six-session
+            You get a coach who builds the plan around your goals. Start with your free session, or go straight to the six-session
             Kickstarter.
           </p>
         </div>

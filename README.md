@@ -5,7 +5,7 @@ Redesign of [getfitathleticclub.com](https://getfitathleticclub.com/). One conve
 - Next.js 16 (App Router, static export) and Tailwind CSS v4
 - GSAP ScrollTrigger and SplitText for motion, Lenis for smooth scroll
 - Styled scrollbars, scroll progress bar, reduced-motion support
-- Dark and light mode. Dark is the default; the toggle in the header remembers the visitor's choice. Light values are the `html[data-theme='light']` block in `app/globals.css`
+- Dark and light mode. Light is the default; the toggle in the header remembers the visitor's choice. Light values are the `html[data-theme='light']` block in `app/globals.css`
 
 ## Run it
 

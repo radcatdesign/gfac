@@ -38,7 +38,7 @@ export function Results() {
       <div className="container-site">
         <div data-reveal className="mb-[72px] flex flex-col items-center gap-6 text-center">
           <Tag>results</Tag>
-          <h2 className="h-section m-0 max-w-[900px]">The numbers our members put up</h2>
+          <h2 className="h-section m-0 max-w-[900px]">Members like you put up these numbers</h2>
         </div>
 
         <ul className="m-0 mb-6 grid list-none grid-cols-4 gap-6 p-0 max-[991px]:grid-cols-2 max-[479px]:grid-cols-1">

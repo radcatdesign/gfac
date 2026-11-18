@@ -5,14 +5,14 @@ import { Moon, Sun } from 'lucide-react';
 
 type Theme = 'dark' | 'light';
 
-/** Dark is the default look. The visitor's choice is remembered on their device. */
+/** Light is the default look. The visitor's choice is remembered on their device. */
 export function ThemeToggle({ className = '' }: { className?: string }) {
-  const [theme, setTheme] = useState<Theme>('dark');
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
-    setTheme(document.documentElement.dataset.theme === 'light' ? 'light' : 'dark');
+    setTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
     // Keep every toggle on the page (desktop bar, mobile bar) in step.
-    const sync = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'light' : 'dark');
+    const sync = () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
     window.addEventListener('gf-theme', sync);
     return () => window.removeEventListener('gf-theme', sync);
   }, []);

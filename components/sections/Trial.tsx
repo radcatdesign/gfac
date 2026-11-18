@@ -65,7 +65,7 @@ export function Trial() {
               <div className="flex flex-col items-start gap-6">
                 <h2 className="h-section m-0 text-[40px] max-[479px]:text-[34px]">Get your free 3-day pass</h2>
                 <p className="m-0 text-mist">
-                  Full access for three days. Take a class, hit the courts, meet a coach. See if Get Fit feels like your gym.
+                  Three days of full access, on us. Take a class, hit the courts, meet a coach. Decide for yourself if Get Fit feels like your gym.
                 </p>
               </div>
 

@@ -80,13 +80,13 @@ export function Hero() {
           </div>
 
           <h1 data-hero="title" className="h-display m-0 text-[clamp(54px,8.4vw,132px)]">
-            Join the club
+            You belong here.
             <br />
-            for one <span className="text-green">dollar.</span>
+            Start for <span className="text-green">$1.</span>
           </h1>
 
           <p data-hero="fade" className="m-0 max-w-[600px] text-[28px] leading-[1.27] max-[991px]:text-[26px] max-[767px]:text-2xl max-[479px]:text-[22px]">
-            Premier membership. {offer.line} Stay because you want to, not because a contract says so.
+            You pay $1 to enroll and nothing in dues for your first 30 days. Stay because you love it, not because a contract says you have to.
           </p>
 
           <div data-hero="fade" className="mt-2 flex flex-wrap items-center gap-4">
@@ -94,7 +94,7 @@ export function Hero() {
               Join for $1
             </Button>
             <Button href="#trial" variant="outline" size="lg" className="!text-on-media">
-              Get a free 3-day pass
+              Get my free 3-day pass
             </Button>
           </div>
 
