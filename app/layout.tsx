@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: { default: 'Get Fit Athletic Club | Indianapolis Gym, $1 Enrollment', template: '%s | Get Fit Athletic Club' },
   description: site.description,
   openGraph: { title: site.name, description: site.description, type: 'website', locale: 'en_US' },
+  // The GitHub Pages copy is a preview: keep it out of search so it never competes with the real site.
+  robots: process.env.NEXT_PUBLIC_BASE_PATH ? { index: false, follow: false } : undefined,
 };
 
 export const viewport: Viewport = { themeColor: '#050b12', colorScheme: 'dark' };

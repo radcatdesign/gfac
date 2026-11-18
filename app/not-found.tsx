@@ -13,7 +13,7 @@ export default function NotFound() {
           <span className="text-green">Right gym.</span>
         </h1>
         <p className="m-0 max-w-[520px] text-mist">That page is not here. The club still is.</p>
-        <Button href="/" variant="join" size="lg">
+        <Button href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/`} variant="join" size="lg">
           Back to the club
         </Button>
       </div>

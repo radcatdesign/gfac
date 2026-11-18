@@ -16,6 +16,8 @@ npm run build    # static site in ./out
 
 Deploys as-is on Vercel, Netlify or any static host.
 
+Every push to `main` also builds a preview to GitHub Pages (`.github/workflows/pages.yml`). It needs Settings, Pages, Source set to **GitHub Actions**. The preview is marked noindex.
+
 ## Where things live
 
 | What | Where |
