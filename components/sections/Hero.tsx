@@ -57,7 +57,7 @@ export function Hero() {
       ref={root}
       id="top"
       data-section="hero"
-      className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink pb-[96px] pt-[160px] text-on-media max-[991px]:pb-[80px] max-[767px]:pt-[130px]"
+      className="relative flex min-h-[100svh] items-end overflow-hidden bg-[#050b12] pb-[96px] pt-[160px] text-on-media max-[991px]:pb-[80px] max-[767px]:pt-[130px]"
     >
       <img
         data-hero="bg"
