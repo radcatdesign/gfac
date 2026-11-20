@@ -4,7 +4,11 @@
 const LEGACY = 'https://getfitathleticclub.com';
 const IMG = 'https://i0.wp.com/getfitathleticclub.com/wp-content/uploads';
 
-/** Photon-resized copy of a photo already in the club's WordPress media library. */
+/** Site photos generated for the redesign, in public/photos. BASE keeps them working under /gfac on GitHub Pages. */
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const local = (name: string) => `${BASE}/photos/${name}.webp`;
+
+/** Photon-resized copy of a photo in the club's WordPress media library. Only the real trainer headshots still use this. */
 const photo = (path: string, w = 1200) => `${IMG}/${path}?w=${w}&ssl=1`;
 
 export const site = {
@@ -55,9 +59,8 @@ export const offer = {
 };
 
 export const images = {
-  hero: photo('2017/09/GetFit_PersonalTraining_1.jpg', 2000),
-  club: photo('2017/09/GETFIT_Indianapolis_26.jpg', 1100),
-  training: photo('2017/09/GetFit_PersonalTraining_1.jpg', 1400),
+  hero: local('hero'),
+  club: local('club'),
 };
 
 export const amenities = [
@@ -97,42 +100,42 @@ export const classes = [
   {
     name: 'Zumba®',
     body: 'Dance your cardio. Loud music, big energy, and nobody cares if you miss a step.',
-    img: photo('2017/09/GetFit_Zumba_GroupFitness_1.jpg'),
+    img: local('class-zumba'),
   },
   {
     name: 'Full Body Blast',
     body: 'Hit every major muscle group in one session. You walk out knowing you did the work.',
-    img: photo('2017/09/GETFIT_Group-Classes_1.jpg'),
+    img: local('class-full-body-blast'),
   },
   {
     name: 'Yoga',
     body: 'Slow down, breathe, stretch out. Your body loosens up and your head gets quieter.',
-    img: photo('2017/09/GETFIT_Group-Classes_5.jpg'),
+    img: local('class-yoga'),
   },
   {
     name: 'Zumba® Strong',
     body: 'Push yourself to the beat. Bodyweight moves and plyometrics that leave you spent in the best way.',
-    img: photo('2017/09/GetFit_Krav_Group-Fitness_1.jpg'),
+    img: local('class-zumba-strong'),
   },
   {
     name: 'Hula Honey',
     body: 'Work your core, hips and legs in a hula-inspired dance workout you will smile through.',
-    img: photo('2017/09/GETFIT_Group-Classes_6.jpg'),
+    img: local('class-hula-honey'),
   },
   {
     name: 'Zumba® Toning',
     body: 'The Zumba you love, with light weights in your hands for definition.',
-    img: photo('2017/09/GETFIT_Group-Classes_8.jpg'),
+    img: local('class-zumba-toning'),
   },
   {
     name: 'Aerobic Dance',
     body: 'Build your stamina and coordination with rhythmic cardio set to upbeat music.',
-    img: photo('2017/09/GetFit_Pilates_Group-Fitness_2.jpg'),
+    img: local('class-aerobic-dance'),
   },
   {
     name: 'SilverSneakers®',
     body: 'Keep your strength and range of motion for everyday life, with music that keeps you moving.',
-    img: photo('2017/09/GETFIT_Group-Classes_7.jpg'),
+    img: local('class-silversneakers'),
   },
 ];
 

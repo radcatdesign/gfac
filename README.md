@@ -31,7 +31,7 @@ Every push to `main` also builds a preview to GitHub Pages (`.github/workflows/p
 ## Before launch
 
 1. **Trial form.** Set `NEXT_PUBLIC_TRIAL_FORM_ENDPOINT` to a form handler that accepts a JSON POST (CRM webhook, Formspree, etc.). Until then, submitting sends the visitor to the existing trial pass page.
-2. **Photos.** Images load from the current WordPress media library. Copy them into `public/` and update `lib/site.ts` before the old site is retired.
+2. **Photos.** The hero, trial and class photos in `public/photos` are AI-generated mood imagery, not pictures of the club. Originals are in the Figma file "GFAC site photos". Trainer headshots are real and still load from the current WordPress media library, so copy those into `public/` before the old site is retired.
 3. **Join links.** Pricing buttons point at the existing `/join-now/` checkout. Keep that path alive on the domain, or update `links` in `lib/site.ts`.
 4. **Logo.** The header uses a type wordmark because the current logo is dark blue and built for a white background. Drop in a reversed logo when there is one.
 5. **Hours.** The current site lists no opening hours, so none are shown.

@@ -46,7 +46,7 @@ export function Trial() {
             <img
               data-parallax="8"
               src={images.club}
-              alt="Inside Get Fit Athletic Club in Indianapolis"
+              alt="A member arriving at the gym with a bag over her shoulder"
               loading="lazy"
               className="absolute inset-x-0 -top-[10%] h-[120%] w-full object-cover"
             />

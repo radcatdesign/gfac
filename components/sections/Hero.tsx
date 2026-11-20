@@ -62,9 +62,9 @@ export function Hero() {
       <img
         data-hero="bg"
         src={images.hero}
-        alt="A Get Fit personal trainer coaching a member through a resistance band curl"
+        alt="A trainer coaching a member through a dumbbell row"
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-[62%_30%]"
+        className="absolute inset-0 h-full w-full object-cover object-[70%_40%]"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#050b12_0%,#050b12cc_34%,#050b1233_66%,#050b1200_100%)] max-[767px]:bg-[linear-gradient(#050b1299,#050b12b3)]" />
       <div className="absolute inset-x-0 -top-px bottom-0 bg-[linear-gradient(#050b12_0%,#050b1200_22%,#050b1200_62%,#050b12_100%)]" />

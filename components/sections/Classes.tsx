@@ -93,7 +93,7 @@ export function Classes() {
                 <img
                   data-class-img
                   src={item.img}
-                  alt={`${item.name} class at Get Fit Athletic Club`}
+                  alt={`${item.name} class`}
                   loading="lazy"
                   className="absolute inset-y-0 -left-[12%] h-full w-[124%] max-w-none object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
